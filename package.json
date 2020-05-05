@@ -1,0 +1,11 @@
+{
+  "name": "wesquad-bankaccount-jgrande",
+  "version": "1.0.0",
+  "repository": "https://github.com/jimmy-grande/kata-bdd-bankaccount.git",
+  "author": "Jimmy Grande <jimmy.grande@outlook.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}
