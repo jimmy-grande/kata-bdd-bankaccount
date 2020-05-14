@@ -1,0 +1,9 @@
+FROM node:12-alpine
+ENV CHOKIDAR_USEPOLLING true
+
+WORKDIR /usr/app
+
+COPY package.json .
+RUN yarn install
+COPY . .
+CMD ["yarn", "start"]

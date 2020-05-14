@@ -1,5 +1,5 @@
 {
-  "name": "wesquad-bankaccount-jgrande",
+  "name": "@bankaccount/bdd",
   "version": "1.0.0",
   "repository": "https://github.com/jimmy-grande/kata-bdd-bankaccount.git",
   "author": "Jimmy Grande <jimmy.grande@outlook.com>",
@@ -7,5 +7,11 @@
   "private": true,
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "devDependencies": {
+    "lerna": "^3.21.0"
+  },
+  "scripts": {
+    "repo:bootstrap": "yarn lerna bootstrap"
+  }
 }

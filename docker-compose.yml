@@ -1,0 +1,23 @@
+version: "3"
+
+services:
+  client:
+    build:
+      context: ./packages/client
+      dockerfile: Dockerfile.${ENVIRONEMENT:-dev}
+    ports:
+      - 3500:3000
+    volumes:
+      - ./packages/client:/usr/app
+      - /usr/app/node_modules
+    tty: true
+  server:
+    build:
+      context: ./packages/server
+      dockerfile: Dockerfile.${ENVIRONEMENT:-dev}
+    ports:
+      - 3501:3000
+    volumes:
+      - ./packages/server:/usr/app
+      - /usr/app/node_modules    
+    # command: tail -f /dev/null
