@@ -1,5 +1,5 @@
 {
-  "name": "@bank-account/client",
+  "name": "@bankaccount/client",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
